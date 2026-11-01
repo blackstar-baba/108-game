@@ -38,7 +38,7 @@
 
 ## 运行
 
-### 直接运行（macOS）
+### 直接运行（macOS，本地已有构建）
 
 ```bash
 open Build/Liangshan.app
@@ -46,7 +46,13 @@ open Build/Liangshan.app
 
 系统要求：macOS 13+，Apple Silicon（当前构建为 arm64）。首次启动会稍慢，因为所有纹理与网格都在运行时生成。
 
+> 为控制仓库体积，`Build/` 已在 `.gitignore` 中忽略。GitHub 仓库不包含 72 MB 的预构建 app；从仓库克隆后，请用下方 Unity 步骤在本地构建，或从 Releases 获取构建包。
+
 ### 在 Unity 中打开
+
+```bash
+git clone git@github.com:blackstar-baba/108-game.git
+```
 
 1. 使用 **Unity 6（6000.6.7f1）** 或兼容的 Unity 6 版本打开项目根目录。
 2. 打开 `Assets/Scenes/SampleScene.unity`。
